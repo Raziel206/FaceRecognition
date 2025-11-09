@@ -1,2 +1,4 @@
 # FaceRecognition
-A face recognition app using opencv4nodejs 
+---
+A face recognition app using OpenCv for python and mediapipe.
+
