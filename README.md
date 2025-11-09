@@ -1,8 +1,7 @@
 # FaceRecognition  
 *A lightweight real-time face detection & recognition app built with OpenCV / Node.js*
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)  
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/Raziel206/FaceRecognition)  
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/Raziel206/FaceRecognition)  
 
 ---
 
