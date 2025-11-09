@@ -1,7 +1,6 @@
 import cv2 as cv
 import mediapipe as mp
 
-# Mediapipe setup
 mp_faces = mp.solutions.face_detection
 mp_draw = mp.solutions.drawing_utils
 mp_hands = mp.solutions.hands
