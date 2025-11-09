@@ -40,7 +40,7 @@ pip install -r requirements.txt
 python -m src.main
 ```
 ---
-# 📁 Project Structure
+## 📁 Project Structure
 ```bash
 FaceRecognition/
 │
@@ -59,7 +59,7 @@ FaceRecognition/
 └── requirements.txt
 ```
 ---
-# 🎯 Use-Cases & Ideas
+## 🎯 Use-Cases & Ideas
 
 - Use for door-access system: recognise authorised faces and trigger unlock
 
@@ -69,7 +69,7 @@ FaceRecognition/
 
 - Use as a base for more advanced CV/AI work: add expression recognition, mask-detection, emotion tracking
 ---
-# 🔍 Tips & Best Practices
+## 🔍 Tips & Best Practices
 
 - Use clear, well-lit face images for each person in the known_faces/ folder — good data = better recognition
 
@@ -81,7 +81,7 @@ FaceRecognition/
 
 - Always test with multiple poses (frontal, slight angles) and different lighting conditions
 ---
-# 🤝 Contributing
+## 🤝 Contributing
 
 Contributions are welcome and appreciated!  
 Whether it's a bug fix, feature improvement, documentation enhancement, or optimization — every contribution helps.
@@ -95,7 +95,7 @@ Whether it's a bug fix, feature improvement, documentation enhancement, or optim
    ```
 3. Make a pull request, or if it is a big change/major feature, create an issue.   
 ---
-# 🙏 Acknowledgements
+## 🙏 Acknowledgements
 
 [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/)
 [![OpenCV](https://img.shields.io/badge/OpenCV-Powered-orange.svg)](https://opencv.org/)
@@ -105,9 +105,9 @@ Whether it's a bug fix, feature improvement, documentation enhancement, or optim
 This project wouldn't be possible without the amazing work of the open-source community.  
 Special thanks to:
 
-- **Python** — for being simple, fast to prototype, and developer-friendly  
-- **OpenCV** — the core of real-time computer vision in this project  
-- **MediaPipe** — for efficient, production-ready face detection & landmark tracking  
+- [**Python**](https://www.python.org) — for being simple, fast to prototype, and developer-friendly  
+- [**OpenCV**](https://opencv.org) — the core of real-time computer vision in this project  
+- [**MediaPipe**](https://chuoling.github.io/mediapipe) — for efficient, production-ready face detection & landmark tracking  
 - All contributors of these libraries for keeping them free, powerful, and evolving
 
 > **Huge respect to open-source.** This project stands on the shoulders of giants.
@@ -116,6 +116,6 @@ Special thanks to:
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-This project is licensed under the **MIT License**.
+This project is licensed under the [**MIT License**](https://opensource.org/license/mit).
 
 ___
