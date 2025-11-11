@@ -1,5 +1,6 @@
 from src import cv
-from src.utils import resize, face_detect, hand_detect
+import threading
+from src.utils import resize, face_detect, hand_detect, hand_mapping
 cap = cv.VideoCapture(0)
 cap.set(cv.CAP_PROP_FRAME_WIDTH, 640)
 cap.set(cv.CAP_PROP_FRAME_HEIGHT, 480)
@@ -12,12 +13,35 @@ while True:
     if not ret:
         break
     frame = cv.flip(frame, 1)
-    frame = face_detect(frame)
-    frame = hand_detect(frame)
-    output = resize(frame)
+
+    frame_results = {}
+
+
+    def process_face(frame):
+        frame_results['face'] = face_detect(frame)
+
+
+    def process_hand(frame):
+        frame_results['hand'] = hand_detect(frame)
+
+
+    def process_mapping(frame):
+        frame_results['map'] = hand_mapping(frame)
+
+
+    threads = [
+        threading.Thread(target=process_face, args=(frame,)),
+        threading.Thread(target=process_hand, args=(frame,)),
+        threading.Thread(target=process_mapping, args=(frame,))
+    ]
+
+    for t in threads: t.start()
+    for t in threads: t.join()
+
+    frame = resize(frame_results.get('map', frame))
     if (cv.waitKey(1) & 0xFF) == 27:
         break
-    cv.imshow('frame', output)
+    cv.imshow('frame', frame)
 
 cap.release()
 cv.destroyAllWindows()
